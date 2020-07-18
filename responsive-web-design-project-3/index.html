@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>FCC: Product Landing Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Main CSS-->
+	<link rel="stylesheet" type="text/css" href="css-main.css">
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		body {
+			background-image: linear-gradient(90deg, #bdc3c7, #2c3e50);
+			background-color: #00e6e6;
+		}
+
+		#header {
+			position: sticky;
+			top: 3px;
+			left: 0px;
+			background-image: linear-gradient(90deg, #bdc3c7, #2c3e50);
+			width: 100%;
+			height: 21%;
+			overflow: auto;
+		}
+
+		#header-img {
+			float: right;
+			width: 30%;
+			height: auto;
+		}
+
+		#nav-bar > div {
+			display: inline-flex;
+			width: auto;
+			height: inherit;
+			margin: 1% 5% 0% 2%;
+			color: black;
+		}
+
+		a {
+			color: black;
+			text-decoration : none;
+			font-size: 1.4em;
+		}
+
+		a:hover {
+			color: white;
+		}
+
+		main {
+			width: 100%;
+			height: 50vh;
+			margin: auto;
+			text-align: center;
+			vertical-align: auto;
+			padding: 3%;
+		}
+		
+		main > h2 {
+			font-size: 1.5em;
+		}
+
+		input {
+			width: 23%;
+			height: auto;
+			font-family: cursive;
+			font-size: 1.1em;
+			margin: 5px;
+		}
+
+		input[type=submit] {
+			background-color: orange;
+			width: 15%;
+			height: auto;
+			font-family: cursive;
+			font-size: 1.1em;
+			margin: 5px;
+			border: 0px solid orange;
+			border-radius: 5px;
+		}
+
+		section > div {
+			width: 60%;
+			height: auto;
+			margin: auto;
+			margin-bottom: 1.5%;
+			text-align: justify;
+			font-size: 1.1em;
+			padding: 1% 0 1% 0;
+			box-sizing: border-box;
+		}
+
+		.features {
+			flex-direction: column;
+		}
+
+		#video {
+			width: 100%;
+			height: 70vh;
+			margin-left: ;
+		}
+
+		.pricing {
+			display: flex;
+			flex-direction: row;
+			margin: auto;
+		}
+
+		.flex-items {
+			flex-wrap: wrap;
+			background-image: linear-gradient(90deg, #99f2c8, #1f4037);
+			border: 1px solid black;
+			border-radius: 7px;
+			background-color: white;
+			width: 20%;
+			min-width: 15%;
+			height: auto;
+			min-height: 100%;
+			margin-top: 2%;
+			text-align: center;
+		}
+
+		@media(max-width: 620px) {
+			#header-img {
+				float: left;
+				width: 100%;
+				height: auto;
+				margin: auto;
+			}
+
+			#nav-bar > div {
+				display: inline-block;
+				border: 2px solid black;
+				width: 100%;
+				height: inherit;
+				margin: auto;
+				margin-top: 13px;
+				color: black;
+				text-align: center;
+			}
+
+			input {
+				width: 50%;
+				height: auto;
+				font-family: cursive;
+				font-size: 1.1em;
+				margin: 5px;
+			}
+			section > div {
+				width: 100%;
+				min-width: 350px;
+				height: auto;
+				margin: auto;
+				margin-bottom: 1.5%;
+				text-align: justify;
+				font-size: 1.1em;
+				padding: 1% 0 1% 0;
+			}
+
+			#video {
+				width: 100%;
+				height: auto;
+				margin: auto;
+			}
+
+			.pricing {
+				display: flex;
+				flex-direction: column;
+				margin: auto;
+			}
+
+			.flex-items {
+				background-image: linear-gradient(90deg, #99f2c8, #1f4037);
+				border: 1px solid black;
+				border-radius: 7px;
+				background-color: white;
+				width: 70%;
+				min-width: 15%;
+				height: auto;
+				min-height: 100%;
+				margin-top: 2%;
+				text-align: center;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<header id="header">
+		<a href="index.html"><img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="Logo"></a>
+		<nav id="nav-bar">
+			<div><a class="nav-link" href="#features">Features</a></div>
+			<div><a class="nav-link" href="#working">How it Works</a></div>
+			<div><a class="nav-link" href="#pricing">Pricing</a></div>
+		</nav>
+	</header>
+	
+	<main>
+		<h2>Handcrafted, home-made masterpieces</h2>
+		<form id="form"  action="https://www.freecodecamp.com/email-submit">
+			<input id="email" type="email" name="email" placeholder="Enter your email address"><br>
+			<input id="submit" type="submit" name="submit" value="Get Started...">
+		</form>
+	</main>
+	
+	<section id="features" class="features">
+		<div>
+			<img src="https://img.icons8.com/cute-clipart/50/000000/thumb-up.png"/>
+			<span style="margin: 10px; font-family: cursive; font-size: 1.5em;">Premium Materials</span><br>
+			Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+		</div>
+	
+		<div>
+			<img src="https://img.icons8.com/cute-clipart/64/000000/in-transit.png"/>
+			<span style="margin: 10px; font-family: cursive; font-size: 1.5em;">Fast Shipping</span><br>
+			We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+		</div>
+	
+		<div>
+			<img src="https://img.icons8.com/cute-clipart/64/000000/empty-battery.png"/><span style="margin: 10px; font-family: cursive; font-size: 1.5em;">Quality Assurance</span><br>
+			For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+		</div>
+	</section>
+	
+	<section id="working">
+		<div>
+			<iframe id="video" width="100%	" height="400" src="https://www.youtube.com/embed/NGEvASSaPyg" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+		</div>
+	</section>
+
+	<section id="pricing" class="pricing">
+		<div class="flex-items">
+			<div style="width: 100%; font-family: cursive;">VALVE TROMBONE</div>
+			<h1>$900</h1>
+			Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.<br><br>
+			<input style="width: 60%" type="submit" name="submit" value="SELECT">
+		</div>
+		<div class="flex-items">
+			<div style="width: 100%; font-family: cursive;">VALVE TROMBONE</div>
+			<h1>$1000</h1>
+			Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.<br><br>
+			<input style="width: 60%" type="submit" name="submit" value="SELECT">
+		</div>
+		<div class="flex-items">
+			<div style="width: 100%; font-family: cursive;">VALVE TROMBONE</div>
+			<h1>$1200</h1>
+			Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.<br><br>
+			<input style="width: 60%" type="submit" name="submit" value="SELECT">
+		</div>
+	</section>
+
+	<footer>
+		
+	</footer>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>	
